@@ -32,13 +32,13 @@ function registrar(){
 				if (registroAJAX.responseText == 'registro'){
 					mensaje('Bienvenido, has sido registrado :)');
 					setTimeout(function(){
-						location.href ="http://localhost/pecafood/principal.php";
+						location.href ="/pecafood/principal.php";
 					},1000)
 				}
 				else if(registroAJAX.responseText == 'yaregistrado'){
 					mensaje('¡Usuario ya registrado, escoge uno nuevo!');
 					setTimeout(function(){
-						location.href ="http://localhost/pecafood/registro.php";
+						location.href ="/pecafood/registro.php";
 					},1000)
 				}
 				else{
