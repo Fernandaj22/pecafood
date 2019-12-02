@@ -1,0 +1,862 @@
+:root{
+	--oscuro: #2c3e50;
+	--verde: #00e9aa;
+	--rojo: #ff2a81;
+	--claro: white;
+	--aqua: #1abc9c;
+	--azul: #2980b9;
+	--rosa: #FF5959;
+	--negro: #0F0F0F;
+}
+
+*{
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+html, body{
+	width: 100%;
+	height: 100%;
+}
+
+h1, h2, h3, p, b{
+	cursor: default;
+}
+
+.nopadding{
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
+.altura{
+	width: 100%;
+	height: 100%;
+}
+
+/*Estilos del login*/
+.logo{
+	height: 150px;
+	float: left;
+	position: relative;
+	display: flex;
+	justify-content: space-around !important;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+}
+	.logo img{
+		height: 100px;
+	}
+
+.contenido-login{
+	float: left;
+	position: relative;
+	height: calc(100% - 150px);
+	background-image: url(../img/fondo2.jpg);
+	background-size: cover;
+	display: flex;
+	justify-content: space-around !important;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+}
+	.campos{
+		height: auto;
+		background: rgba(0,0,0,.4);
+		border-radius: 20px;
+	}
+		.campos i{
+			width: 10%;
+			color: white !important;
+		}
+		.campos p{
+			margin-top: 20px;
+			color: white;
+			font-weight: 600;
+			font-size: 1.2em;
+		}
+		.campos input{
+			height: 30px;
+			width: 80%;
+			border: none;
+			margin-top: 20px;
+			padding: 5px;
+			box-sizing: border-box;
+			outline: none;	
+			border-radius: 5px;
+			font-size: .9em;
+		}
+		.campos button{
+			width: 40%;
+			height: 30px;
+			margin-top: 30px;
+			margin-bottom: 20px;
+			border: none;
+			border-radius: 30px;
+			background: var(--verde);
+			color: white;
+			cursor: pointer;
+			font-size: .9em;
+			font-weight: 600;
+			outline: none;
+		}
+		.campos a{
+			width: 100%;
+			float: left;
+			position: relative;
+			text-decoration-line: none;
+			font-size: .8em;
+			font-weight: 500;
+			color: var(--claro);
+			margin-bottom: 15px;
+		}
+			.campos a:hover{
+				font-weight: 600;
+			}
+
+/*Estilos principal*/
+.navegador{
+	float: left;
+	position: relative;
+	top: 0px;
+	height: 50px;
+	background: var(--verde);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+	.navegador img{
+		height: 45px;
+	}
+	.navegador a{
+		width: 20%;
+		text-decoration: none;
+		font-size: .9em !important;
+		color: var(--claro);
+		height: 100%;
+		font-weight: 600;
+		line-height: 50px;
+		text-align: center;
+	}
+	.navegador .bo{
+		border-left: 1px solid rgba(0,0,0,.07)
+	}
+		.navegador .dif:hover{
+			background: none !important;
+		}
+		.navegador a:hover{
+			background: var(--rojo);
+			transition: .5s all;
+		}
+
+.medio{
+	float: left;
+	position: relative;
+	height: calc(55% - 50px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+	.parte1{
+		background-image: url(../img/ban4.jpg);
+		background-size: cover;
+		opacity: 1;
+	}
+	.parte1 p, .parte2 p{
+		text-align: center;
+		font-size: 1.4em;
+		font-weight: 600;
+		color: var(--claro);
+		text-shadow: 3px 2px 5px black;
+	}
+	.parte1:hover, .parte2:hover{
+		transition: .5s all;
+		opacity: .8;
+	}
+	.parte2{
+		background-image: url(../img/ban2.jpg);
+		background-size: cover;
+		opacity: 1;
+	}
+
+.encabezado{
+	float: left;
+	position: relative;
+	text-align: center;
+	padding: 8px;
+	box-sizing: border-box;
+	color: var(--oscuro);
+}
+	.encabezado h2{
+		font-weight: 600;
+		font-size: 1.2em;
+		margin-bottom: 5px;
+		margin-top: 5px !important;
+	}
+	.encabezado p{
+		font-weight: 400;
+		font-size: .9em;
+	}
+
+.pagos{
+	float: left;
+	position: relative;
+	height: auto;
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+	align-items: center;
+	padding: 5px;
+	box-sizing: border-box;
+}
+	.pagos img{
+		height: 30px;
+		opacity: .8;
+	}
+.promociones{
+	float: left;
+	position: relative;
+	height: auto;
+	background-size: cover;
+	background-position: center top;
+	padding: 15px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-around !important;
+	align-items: center;
+	align-content: center;
+	border-top: .5px dotted var(--verde);
+	margin-top: 10px;
+}
+	.promociones img{
+		height: 80px;
+	}
+	.promociones h3{
+		font-weight: 500;
+		font-size: 1em;
+		text-align: center;
+	}
+	.descuento{
+		height: 30px;
+		border-radius: 30px;
+		color: white;
+		background: var(--verde);
+		border: none;
+		cursor: pointer;
+		font-size: .9em;
+		font-weight: 600;
+		outline: none;
+	}
+
+/*Estilos super.php*/
+.categorias{
+	float: left;
+	position: relative;
+	height: auto;
+}
+	.botones{
+		float: left;
+		position: relative;
+		height: auto;
+		border-top: .5px dotted var(--verde);
+		padding: 10px;
+		box-sizing: border-box;
+		display: flex;
+		align-items: center;
+		align-content: center;
+		justify-content: space-between;
+	}
+		.botones button{
+			height: 35px;
+			border-radius: 30px;
+			color: white;
+			background: var(--verde);
+			border: none;
+			cursor: pointer;
+			font-size: .9em;
+			font-weight: 600;
+			outline: none;
+			box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.1);
+			margin: 10px;
+		}
+	.articulo{
+		width: 20%;
+		margin-left: 4%;
+		float: left;
+		position: relative;
+		margin-bottom: 10px;
+		margin-top: 10px;
+		border: 1px solid rgba(0,0,0,0.07);
+		border-radius: 10px;
+		display: flex;
+		justify-content: space-around !important;
+		flex-direction: column;
+		align-items: center;
+		align-content: center;
+		padding: 10px;
+		box-sizing: border-box;
+	}
+		.articulo img{
+			height: 120px;
+			margin-top: 5px;
+		}
+		.articulo h3{
+			font-weight: 400;
+			font-size: 1.2em;
+		}
+		.articulo p{
+			font-weight: 600;
+			font-size: 1em;
+		}
+		.articulo .es{
+			font-weight: 500;
+			font-size: .8em;
+		}
+		.articulo input{
+			margin-top: 7px;
+			margin-bottom: 7px;
+			border: 1px solid var(--verde);
+			padding: 2px;
+			box-sizing: border-box;
+		}
+		.articulo button{
+			width: 45%;
+			height: 25px;
+			margin-top: 7px;
+			margin-bottom: 7px;
+			border-radius: 30px;
+			color: white;
+			background: var(--verde);
+			border: none;
+			cursor: pointer;
+			font-size: .8em;
+			font-weight: 600;
+			outline: none;
+		}
+			.articulo button:hover{
+				background: var(--rosa);
+				transition: .4s all;
+			}
+		.articulo a{
+			width: 100%;
+			float: left;
+			position: relative;
+			font-size: .8em;
+			text-align: center;
+			cursor: pointer;
+			text-decoration: none;
+			color: var(--negro);
+		}
+
+	.frutas, .lacteos, .harina, .bebida, .limpieza, .vinos, .tecnologia{
+		float: left;
+		position: relative;
+		height: auto;
+		margin-bottom: 20px;
+		display: none;
+	}
+	.frutas{
+		display: block !important;
+	}
+	.verfrutas{
+		display: none !important;
+	}
+	.verlacteos, .verharina, .verbebida, .verlimpieza, .vervinos, .vertecnologia{
+		display: block !important;
+	}
+	.volver{
+		padding: 5px;
+		box-sizing: border-box;
+		height: 30px;
+		/*background: red;*/
+		float: left;
+		position: relative;
+		text-align: center;
+		font-size: .9em;
+		border-top: .5px dotted var(--verde);
+		display: none;
+	}
+		.volver a{
+			text-decoration: none;
+			color: var(--rosa);
+		}
+
+/*Estilos de bolsa*/
+.bolsa{
+	height: calc(100% - 130px);
+	float: left;
+	position: relative;
+	border-top: .5px dotted var(--verde);
+}
+.cont{
+	float: left;
+	position: relative;
+	height: auto;
+}
+	.titulo h2{
+		font-weight: 600;
+		font-size: 1.2em;
+		text-align: center !important;
+		color: rgba(0,0,0,.8);
+	}
+	.titulo p{
+		font-weight: 300;
+		font-size: .9em;
+	}
+	.titulo button{
+		border-radius: 30px;
+		height: 30px;
+		width: 15%;
+		color: white;
+		background: var(--rosa);
+		border: none;
+		cursor: pointer;
+		font-size: .8em;
+		font-weight: 600;
+		outline: none;
+		box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.4);
+	}
+
+	.artañadido{
+		width: 100%;
+		float: left;
+		position: relative;
+		height: auto;
+		padding: 5px;
+		box-sizing: border-box;
+		margin-bottom: 5px;
+		/*border: 1px solid rgba(0,0,0,0.07);*/
+	}
+		.artañadido h3{
+			font-weight: 500;
+			font-size: .9em;
+			margin-bottom: 2px;
+		}
+		.artañadido .especial{
+			font-size: .9em;
+			font-weight: 500;
+			float: left !important;
+			color: var(--rojo);
+		}
+		.artañadido p{
+			font-weight: 500;
+			font-size: .8em;
+			margin-bottom: 2px;
+			float: right;
+			position: relative;
+		}
+		.artañadido input{
+			width: 40%;
+			margin-bottom: 7px;
+			border: 1px solid var(--verde);
+			padding: 2px;
+			box-sizing: border-box;
+			float: right;
+			position: relative;
+		}
+		.artañadido button{
+			float: right;
+			position: relative;
+			font-size: .7em;
+			text-decoration: none;
+			color: var(--oscuro);
+			margin-top: -10px;
+			cursor: pointer;
+			background: none;
+			border: none;
+		}
+		.artañadido button:hover{
+			 background: none !important;
+		}
+		.artañadido img{
+			height: 90px;
+		}
+
+	.pago{
+		height: auto;
+		float: left;
+		position: relative;
+	}
+
+	.back{
+		width: 100%;
+		height: 100%;
+		background-image:
+			      linear-gradient(90deg,
+			      rgba(255,255,255,.6),
+			      rgba(255,255,255,.6)
+			    ),
+			    url(../img/fondo1.jpg);
+		background-position: center center;
+		background-size: cover;
+	}
+	.form{
+		height: auto;
+		padding: 20px;
+		box-sizing: border-box;
+		margin-top: 10% !important;
+		background: rgba(0,0,0,.2) !important;
+		margin-left: 25% !important;
+		float: left !important;
+		position: relative !important;
+		border-radius: 5px;
+	}
+		.form button{
+			margin-top: 10px;
+			margin-left: 40%;
+			cursor: pointer;
+			height: 30px;
+			border-radius: 5px;
+			background-color: var(--verde);
+			color: white;
+			font-weight: 600;
+			border: none;
+			outline: none;
+			padding: 5px;
+			box-sizing: border-box;
+			font-size: .9em;
+		}
+
+	.formas{
+		margin-top: 10px;
+		float: left;
+		position: relative;
+	}
+	.formas p{
+		font-size: .8em;
+		font-weight: 600;
+		float: left;
+		position: relative;
+		margin-top: 7px;
+		float: left;
+		position: relative;
+		margin-bottom: 0px !important;
+	}
+	.formas input{
+		float: left;
+		position: relative;
+		padding: 3px;
+		box-sizing: border-box;
+		outline: none;
+		height: 20px;
+		margin-top: 5px;
+		border-radius: 2px;
+		border: 1px solid rgba(0,0,0,.2);
+	}
+.preticket{
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	float: left;
+	position: relative;
+}
+	.preticket table{
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+		border-collapse: collapse;
+		margin-top: 10px;
+		float: left;
+		position: relative;
+	}
+	.preticket tr{
+		border: 1px solid rgba(0,0,0,.3);
+		border-radius: 3px;
+	}
+	.preticket th, td{
+		border: 1px solid rgba(0,0,0,.3);
+		padding: 5px;
+		box-sizing: border-box;
+	}
+		th{
+			font-weight: 600;
+			font-size: .8em;
+		}
+		td{
+			text-align: center;
+			font-size: .8em;
+		}
+	.flex{
+		display: flex;
+		align-content: center;
+		align-items: center;
+		justify-content: center;
+		float: left;
+		position: relative;
+	}
+	.preticket button{
+		background: var(--verde);
+		border-radius: 10px;
+		border: none;
+		padding: 5px;
+		box-sizing: border-box;
+		color: white;
+		font-weight: 600;
+		font-size: .9em;
+	}
+
+	.titulo3{
+		width: 80%;
+		float: left;
+		position: relative;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	.titulo3 h3{
+		width: 100%;
+		font-size: .8em;
+		font-weight: 600;
+		text-align: center;
+		color: rgba(0,0,0,.7);
+	}
+	.titulo3 p{
+		width: 100%;
+		text-align: center;
+		position: relative;
+		font-size: .9em;
+		font-weight: 800;
+		color: var(--rosa);
+	}
+
+/*alerta*/
+.mensaje{
+	height: 40px;
+	background: var(--rosa);
+	color: white;
+	text-align: center;
+	top: -40px;
+	position: absolute;
+	z-index: 9999;
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+}
+	.mensaje h1{
+		font-weight: 600;
+		font-size: 1em;
+		margin-top: 8px !important;
+
+	}
+
+.agregado{
+	height: 40px;
+	background: var(--rosa);
+	color: white;
+	text-align: center;
+	top: -40px;
+	position: absolute;
+	z-index: 9999;
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+}
+	.agregado h1{
+		font-weight: 600;
+		font-size: 1em;
+		margin-top: 8px !important;
+	}
+
+/*ticket*/
+.fila1{
+	width: 30%;
+	margin-left: 35%;
+	margin-right: 35%;
+	height: 200px;
+	float: left;
+	position: relative;
+	display: flex;
+	justify-content: space-around !important;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	padding: 10px;
+	box-sizing: border-box;
+	/*border: 1px solid rgba(0,0,0,0.6);*/
+	text-align: center;
+}
+	.fila1 img{
+		height: 90px;
+	}
+	.fila1 h1{
+		font-size: 1em;
+	}
+	.fila1 h2{
+		font-size: .9em;
+	}
+	.fila1 p{
+		font-size: .8em;
+	}
+	.fila1 b{
+		font-size: .8em;
+	}
+
+.fila2{
+	width: 30%;
+	margin-left: 35%;
+	margin-right: 35%;
+	height: auto;
+	float: left;
+	position: relative;
+	display: flex;
+	justify-content: space-around !important;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	padding: 10px;
+	box-sizing: border-box;
+	background: none !important;
+}
+	.fila2 table{
+		border: none;
+	}
+	.fila2 tr, th, td{
+		border:none;
+	}
+.fila3{
+	width: 30%;
+	margin-left: 35%;
+	margin-right: 35%;
+	height: auto;
+	float: left;
+	position: relative;
+	display: flex;
+	justify-content: space-around !important;
+	flex-direction: column;
+	align-items: right;
+	align-content: right;
+	text-align: right;
+	padding: 10px;
+	box-sizing: border-box;
+}	
+	.fila3 p{
+		font-size: .9em;
+		float: right !important;
+	}
+.fila4{
+	width: 30%;
+	margin-left: 35%;
+	margin-right: 35%;
+	height: auto;
+	float: left;
+	position: relative;
+	display: flex;
+	justify-content: space-around !important;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	padding: 10px;
+	box-sizing: border-box;
+}
+	.fila4 p{
+		font-size: .7em;
+		float: right !important;
+		text-align: justify;
+		margin-top: 5px;
+	}
+.fila-bar{
+	width: 30%;
+	margin-left: 35%;
+	margin-right: 35%;
+	height: auto;
+	float: left;
+	position: relative;
+	/*background: red;*/
+	align-content: center;
+	padding: 10px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-around !important;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+}
+	.fila-bar img{
+		height: 100px;
+	}
+	.fila-bar p{
+		font-size: .7em;
+		text-align: center;
+		font-style: italic;
+	}
+
+@media (max-width: 768px){
+	.pagos{
+		float: left;
+		position: relative;
+		height: auto;
+		display: flex;
+		justify-content: space-around;
+		align-content: center;
+		align-items: center;
+		flex-direction: column;
+		padding: 5px;
+		box-sizing: border-box;
+	}
+
+		.pagos img{
+			margin-top: 10px;
+		}
+
+	.promociones{
+		float: left;
+		position: relative;
+		height: auto;
+		background-size: cover;
+		background-position: center top;
+		padding: 5px;
+		box-sizing: border-box;
+		display: flex;
+		justify-content: space-around !important;
+		flex-direction: column;
+		align-items: center;
+		align-content: center;
+		border-top: .5px dotted var(--verde);
+		margin-top: 10px;
+	}
+		.promociones img{
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+
+	.botones{
+		float: left;
+		position: relative;
+		height: auto;
+		border-top: .5px dotted var(--verde);
+		padding: 10px;
+		box-sizing: border-box;
+		display: flex;
+		align-items: center;
+		align-content: center;
+		justify-content: space-between;
+		flex-direction: column;
+	}
+
+	.articulo{
+		width: 90%;
+		margin-left: 5%;
+		float: left;
+		position: relative;
+		margin-bottom: 10px;
+		margin-top: 10px;
+		border: 1px solid rgba(0,0,0,0.07);
+		border-radius: 10px;
+		display: flex;
+		justify-content: space-around !important;
+		flex-direction: column;
+		align-items: center;
+		align-content: center;
+	}
+
+	.formas p{
+		text-align: center;
+	}
+}
