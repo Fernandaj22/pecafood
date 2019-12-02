@@ -81,6 +81,6 @@
 <?php 
 } 
 else{
-	header("Location: https://fernandaj22.github.io/pecafood/index.php");
+	header("Location: https://fernandaj22.github.io/pecafood");
 } 
 ?>
