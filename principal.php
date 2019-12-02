@@ -83,6 +83,6 @@
 <?php 
 } 
 else{
-	header("Location: http://localhost/pecafood/index.php");
+	header("Location: https://fernandaj22.github.io/pecafood/index.php");
 } 
 ?>

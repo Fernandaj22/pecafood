@@ -32,13 +32,13 @@ function registrar(){
 				if (registroAJAX.responseText == 'registro'){
 					mensaje('Bienvenido, has sido registrado :)');
 					setTimeout(function(){
-						location.href ="/pecafood/principal.php";
+						location.href ="https://fernandaj22.github.io/pecafood/principal.php";
 					},1000)
 				}
 				else if(registroAJAX.responseText == 'yaregistrado'){
 					mensaje('¡Usuario ya registrado, escoge uno nuevo!');
 					setTimeout(function(){
-						location.href ="/pecafood/registro.php";
+						location.href ="https://fernandaj22.github.io/pecafood/registro.php";
 					},1000)
 				}
 				else{
@@ -65,7 +65,7 @@ function iniciar(){
 					mensaje('¡Error! Los datos son incorrectos o no coiciden :(')
 				}
 				else{
-					location.href ="http://localhost/pecafood/principal.php";
+					location.href ="https://fernandaj22.github.io/pecafood/principal.php";
 				}
 			}
 		}
@@ -147,7 +147,7 @@ function tecnologia(){
 }
 
 function supermercado(){
-	location.href ="http://localhost/pecafood/super.php";
+	location.href ="https://fernandaj22.github.io/pecafood/super.php";
 }
 
 // function printExternal(url) {
@@ -173,7 +173,7 @@ function ticket(){
 		ticketAJAX.onreadystatechange = function(){
 			if(ticketAJAX.readyState == 4 && ticketAJAX.status == 200){
 				if(ticketAJAX.responseText == 'bien'){
-					location.href="http://localhost/pecafood/ticket.php";
+					location.href="https://fernandaj22.github.io/pecafood/ticket.php";
 					setTimeout(function(){ eliminarBolsa(); }, 3000);
 				}
 			}
